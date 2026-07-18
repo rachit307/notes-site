@@ -1,0 +1,11 @@
+<nav th:fragment="sidebar" class="sidebar">
+    <h1 class="site-title"><a href="/">My notes</a></h1>
+    <div th:each="entry : ${categories}" class="category">
+        <div class="category-name" th:text="${entry.key}">category</div>
+        <ul class="note-list">
+            <li th:each="note : ${entry.value}">
+                <a th:href="@{'/notes/' + ${note.category} + '/' + ${note.slug}}" th:text="${note.title}">Note title</a>
+            </li>
+        </ul>
+    </div>
+</nav>
