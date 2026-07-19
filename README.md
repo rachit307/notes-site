@@ -28,8 +28,3 @@ notes/
     design-patterns.md
 ```
 
-## Next steps (not yet built)
-
-- Dockerfile (multi-stage: Maven build -> slim JRE runtime)
-- GitHub Actions workflow to build + deploy on push to `main`
-- Deploy target: Fly.io
