@@ -1,4 +1,4 @@
-# Docker architecture and internals !!!
+# Docker architecture and internals
 
 ## The three main pieces
 
